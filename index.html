@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Grocery Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Stella Grocery Mart</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to the Stella Grocery Mart</h2>
+            <p>Fresh groceries delivered to your door.</p>
+            <img src="./assets/fruits.jpg"width=100%>
+        </section>
+        <section id="shop">
+            <h2>Shop</h2>
+        </section>
+        <section id="products">
+            
+            <div class="product">
+                <h3>Apple</h3>
+                <p>$1.00 each</p>
+                <button onclick="addToCart('Apple', 1.00)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Banana</h3>
+                <p>$0.50 each</p>
+                <button onclick="addToCart('Banana', 0.50)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Orange</h3>
+                <p>$0.85 each</p>
+                <button onclick="addToCart('Orange', 0.50)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Strawberry</h3>
+                <p>$1.85 each</p>
+                <button onclick="addToCart('strawberry', 0.50)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Kiwi</h3>
+                <p>$0.60 each</p>
+                <button onclick="addToCart('kiwi', 0.50)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Grapes</h3>
+                <p>$1.20 each</p>
+                <button onclick="addToCart('grapes', 0.50)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Dragon fruit</h3>
+                <p>$2.64 each</p>
+                <button onclick="addToCart('Orange', 0.50)">Add to Cart</button>
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Cart</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: $<span id="totalPrice">0.00</span></p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+                <br><br><br>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Stella Grocery Mart</p>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+</html>
